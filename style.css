@@ -16,8 +16,159 @@
 html {
   font-family: 'Overpass', sans-serif;
   font-size: 62.5%;
+  color: var(--white);
 }
 
-p {
-  font-size: 1.5rem;
+body {
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
 }
+
+/***********************/
+/*     RATING BOX      */
+/***********************/
+.rating-box {
+  padding: 3.2rem;
+  border-radius: 3rem;
+  width: 40rem;
+  background-color: var(--dark-blue);
+}
+
+.star-img {
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+  background-color: hsl(213, 19%, 23%);
+}
+
+.main-heading {
+  font-size: 3rem;
+  margin-bottom: 2.4rem;
+  font-weight: 400;
+}
+
+.rate-desc {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin-bottom: 2.4rem;
+  color: var(--medium-gray);
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  border-radius: 50%;
+  font-weight: 700;
+  color: var(--medium-gray);
+  background-color: hsl(213, 19%, 23%);
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.btn-checked {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.btn:active {
+  background-color: var(--orange);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 1.2rem;
+  color: var(--white);
+  border: none;
+  border-radius: 2rem;
+  letter-spacing: 3px;
+  background-color: var(--orange);
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.btn-submit:active {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: unset;
+}
+
+/***********************/
+/*    THANK YOU BOX    */
+/***********************/
+.box-thanks {
+  text-align: center;
+}
+
+.thanks-heading-rating {
+  margin: 2.4rem auto 0.5rem auto;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  font-weight: 400;
+  color: var(--orange);
+  background-color: hsl(213, 19%, 23%);
+}
+
+.thanks-heading {
+  font-weight: 400;
+  margin-top: 3rem;
+  font-size: 2.6rem;
+}
+
+.thanks-paragraph {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--light-grey);
+}
+
+/***********************/
+/*       FOOTER        */
+/***********************/
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* 
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98  */

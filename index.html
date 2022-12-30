@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <!-- favicon -->
     <link
       rel="icon"
       type="image/png"
@@ -13,40 +13,66 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Interactive rating component</title>
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <!-- Rating state start -->
+    <main>
+      <div class="rating-box">
+        <!-- rating box -->
+        <div class="visible">
+          <img src="images/icon-star.svg" alt="" class="star-img" />
+          <h1 class="main-heading">How did we do?</h1>
+          <p class="rate-desc">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="button-wrapper">
+            <button class="btn btn-1">1</button>
+            <button class="btn btn-2">2</button>
+            <button class="btn btn-3">3</button>
+            <button class="btn btn-4">4</button>
+            <button class="btn btn-5">5</button>
+          </div>
+          <button class="btn-submit">SUBMIT</button>
+        </div>
+        <!-- rating box end -->
 
-    How did we do? Please let us know how we did with your support request. All
-    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
+        <!-- thank you box -->
+        <div class="box-thanks hidden">
+          <img
+            src="/images/illustration-thank-you.svg"
+            alt=""
+            class="thanks-img"
+          />
+          <h2 class="thanks-heading-rating">
+            You selected <span class="rate"></span>out of 5
+          </h2>
+          <h2 class="thanks-heading">Thank you!</h2>
+          <p class="thanks-paragraph">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, doesn't hesitate to get in touch!
+          </p>
+        </div>
+        <!-- thank you box end-->
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded with ❤️ by
+      <a href="https://github.com/kacperkwinta" target="_blank" rel="noopener"
+        >Kacper Kwinta</a
+      >.
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
