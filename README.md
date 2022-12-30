@@ -1,4 +1,4 @@
-# Frontend Mentor - Interactive-rating-component
+# Frontend Mentor - Interactive rating component
 
 ![Image of the project](./design/desktop-design.jpg)
 
