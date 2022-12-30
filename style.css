@@ -177,6 +177,7 @@ FONT SIZE SYSTEM (px)
 @media (max-width: 25em) {
   .rating-box,
   .box-thanks {
-    width: 100%;
+    width: auto;
+    margin: 0 1rem;
   }
 }
