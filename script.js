@@ -1,5 +1,6 @@
 'use strict';
 
+// select elements
 const btnEl = document.querySelectorAll('.btn');
 const btnSubmit = document.querySelector('.btn-submit');
 const rateBox = document.querySelector('.visible');
@@ -24,11 +25,15 @@ btnEl.forEach(btnEl => {
   });
 });
 
+// replace content (thank you box)
 btnSubmit.addEventListener('click', function () {
   if (rate) {
-    rateBox.classList.remove('visible');
-    rateBox.classList.add('hidden');
-    thanksBox.classList.remove('hidden');
-    document.querySelector('.rate').textContent = rate + " ";
+    // wait 0.5 sec and replace content 
+    setTimeout(() => {
+      rateBox.classList.remove('visible');
+      rateBox.classList.add('hidden');
+      thanksBox.classList.remove('hidden');
+      document.querySelector('.rate').textContent = rate + ' ';
+    }, 500);
   }
 });

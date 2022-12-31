@@ -125,8 +125,6 @@ body {
 /*    THANK YOU BOX    */
 /***********************/
 .box-thanks {
-  transform: translateY(3rem);
-  transition: all 0.3s ease;
   text-align: center;
   background: var(--dark-blue);
 }
@@ -151,7 +149,6 @@ body {
   font-size: 1.5rem;
   line-height: 1.7;
   margin-top: 2rem;
-  margin-bottom: 2rem;
   color: var(--light-grey);
 }
 
